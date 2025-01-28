@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'home_page.dart';
 
 void main() {
-  runApp(AppSapes());
+  runApp(AppShapes());
 }
 
-class AppSapes extends StatelessWidget {
+class AppShapes extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

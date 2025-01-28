@@ -6,29 +6,32 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       drawer: DrawerButton(),
-      body: Center(
-        child: ListView(
+      body:
+        ListView(
           children: [
             Container(
               color: Colors.red,
               height: 450,
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Container(
                         width: 100,
-                        height: 120,
+                        height: 150,
+
                         decoration: BoxDecoration(
+                          color: Colors.white,
                           border: Border.all(color: Colors.white),
                         ),
                       ),
                       Container(
                         width: 100,
-                        height: 120,
+                        height: 150,
                         decoration: BoxDecoration(
+                          color: Colors.amber,
                           border: Border.all(color: Colors.white),
                         ),
                       ),
@@ -36,9 +39,12 @@ class HomePage extends StatelessWidget {
                   ),
                   //
                   Container(
+
                     height: 80,
                     decoration:
-                    BoxDecoration(border: Border.all(color: Colors.white)),
+                    BoxDecoration(
+
+                        border: Border.all(color: Colors.yellow)),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
@@ -48,7 +54,7 @@ class HomePage extends StatelessWidget {
                           decoration: BoxDecoration(
                             color: Colors.white,
                             shape: BoxShape.circle,
-                            border: Border.all(color: Colors.white),
+
                           ),
                         ),
                         Container(
@@ -57,7 +63,7 @@ class HomePage extends StatelessWidget {
                           decoration: BoxDecoration(
                             color: Colors.white,
                             shape: BoxShape.circle,
-                            border: Border.all(color: Colors.white),
+
                           ),
                         ),
                         Container(
@@ -66,7 +72,7 @@ class HomePage extends StatelessWidget {
                           decoration: BoxDecoration(
                             color: Colors.white,
                             shape: BoxShape.circle,
-                            border: Border.all(color: Colors.white),
+
                           ),
                         ),
                         Container(
@@ -75,7 +81,7 @@ class HomePage extends StatelessWidget {
                           decoration: BoxDecoration(
                             color: Colors.white,
                             shape: BoxShape.circle,
-                            border: Border.all(color: Colors.white),
+
                           ),
                         ),
                       ],
@@ -113,22 +119,24 @@ class HomePage extends StatelessWidget {
             ),
             Container(
               color: Colors.orange,
-              height: 250,
+              height: 400,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+
                 children: [
                   Container(
-                    width: 150,
-                    height: double.infinity,
+                   width: 150,
+                    height:300 ,
                     decoration: BoxDecoration(
-                      border: Border.all(color: Colors.yellow),
+
+                        color: Colors.red
                     ),
                   ),
                   Container(
                     width: 150,
-                    height: double.infinity,
+                    height: 300,
                     decoration: BoxDecoration(
-                      border: Border.all(color: Colors.black),
+                     color: Colors.white,
                     ),
                   ),
                 ],
@@ -136,7 +144,7 @@ class HomePage extends StatelessWidget {
             ),
           ],
         ),
-      ),
+
     );
   }
 }
